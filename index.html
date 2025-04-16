@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Theater HoPro</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Inter for most of the site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- establishes an early connection -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Bebas Neue for dropdown only -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+
+
+
+<body>
+  <header class="topbar">
+    <!-- Left: Hamburger -->
+    <div class="topbar-left">
+      <button id="menu-btn" class="icon-btn">☰</button>
+      <button id="close-btn" class="icon-btn hidden">×</button>
+    </div>
+
+    <!-- Center: Logo -->
+    <div class="topbar-center">
+      <div class="logo">
+        <img src="images/logo-nobg.png" alt="Logo" />
+      </div>
+    </div>
+
+    <!-- Right: Gallery Icon -->
+    <div class="topbar-right">
+      <a href="https://www.icloud.com/sharedalbum/de-de/#B2bG6XBubqX2OBy" target="_blank" class="gallery-icon" id="gallery-btn">꩜</a>
+
+
+
+    <!-- Fullscreen Dropdown Menu -->
+    <div id="dropdown-menu" class="hidden">
+
+
+      <!-- Menu Links -->
+      <nav class="menu-links">
+        <a href="index.html">Aktuell</a>
+        <a href="zeitstrahl.html">Zeitstrahl</a>
+        <a href="das-theater.html">Das Theater</a>
+        <a href="https://eventfrog.ch/de/p/gruppen/nachtmitsommertraum-7300451248712471220.html" target="_blank">Tickets</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content (Aktuell) -->
+  <main id="aktuell">
+    <section class="hero">
+      <!-- Background video (will be styled to be behind content) -->
+      <video autoplay muted loop id="bg-video">
+        <source src="videos/bg-video-2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Centered flyer image -->
+      <div class="flyer-wrapper">
+        <img src="images/nmst-flyer.jpg" alt="Aktuelles Theaterstück" class="flyer-img" />
+      </div>
+    </section>
+
+    <section class="more-info">
+      <h1 class="section-title-big">NachtMitSommerTraum</h1>
+      <h3 class="section-title-grey">inspiriert von Shakespeare</h3> <br><br>
+      <p class="p-black">Hereinspaziert in die ehrwürdigen Hallen der Hohen Promenade, wo zwischen Jubiläumswimpeln und
+        vergilbten Klassenfotos plötzlich Elfen flüstern, Schüler:innen träumen und die Liebe völlig verrückt spielt –
+        denn unsere Schule wird 150 Jahre alt!
+
+        <br><br>Die <strong>Theatergruppe der Hohen Promenade</strong> nimmt Sie mit auf eine magische Reise irgendwo
+        zwischen Shakespeare, Schulhof und Sommernacht. In NachtMitSommerTraum treffen wir auf Liebende, die sich
+        ständig falsch verlieben, auf Feen, die mit Zaubersaft herumkleckern, und auf eine Theatertruppe, die vielleicht
+        nicht alles kann – aber alles gibt!
+
+        <br><br>Liebeschaos? Oh ja. Herzklopfen? Garantiert. Verwechslungen, Verzauberungen und ein Hauch Glitzer über
+        allem? Absolut. Zwischen Cola Zero aus Pappbechern, nächtlichen Proben und 150 Jahren Schulgeschichte
+        verschwimmen Realität und Traum – und mittendrin: wir.
+
+        Machen Sie sich bereit für eine Nacht voller Lichterketten, Liebeszauber und Lachkrämpfe. Lassen Sie sich
+        verführen von einem Stück, das genauso alt ist wie die Irrungen der Herzen – und genauso jung wie der Geist der
+        Hohen Promenade.
+
+        <strong>Licht aus, Spot an – willkommen in der verrücktesten Sommernacht seit 1875!</strong>
+      </p>
+
+
+      <br>
+      <br>
+      <br>
+      <p class="p-grey-center">Premiere Samstag, 5. April
+
+        <br><br>Weitere Spieldaten:<br>
+        Sonntag 6. / Montag 7. / Dienstag 8. April<br><br>
+        Stückbeginn: 19.00 Uhr, Türöffnung jeweils 18:45<br><br>Aula Hohe Promenade<br>Promenadengasse 11<br> 8001
+        Zürich<br><br><br><br>
+      </p>
+
+      <div id="ticket-link" class="black-section">
+        <a href="https://eventfrog.ch/de/p/gruppen/nachtmitsommertraum-7300451248712471220.html" target="_blank">Tickets hier</a>
+      </div>
+      <br>
+      <br><br><br>
+
+      <h6 class="section-title-small">leitung</h6>
+      <h1 class="section-title-big">Anja Martina Schärer<br>Mona Lou Wyss</h1><br>
+      <h6 class="section-title-small">kostüme</h6>
+      <h1 class="section-title-big">Yaira Braunschweig</h1><br>
+      <h6 class="section-title-small">bühne & grafik</h6>
+      <h1 class="section-title-big">Carina Fischer<br>Lukas Baumgartner<br>Till Baptiste Römmelt<br>Kreativkonsum</h1><br>
+      <h6 class="section-title-small">technik</h6>
+      <h1 class="section-title-big">Louise James<br>Alessio Widmer<br>Daniel Flück<br>Yago Köster<br>Marco von Wyss</h1><br>
+      <h6 class="section-title-small">ensemble</h6>
+      <h1 class="section-title-big">Ilektra Aroni<br>
+        Daria Bahar<br>
+        Inès Brugger<br>
+        Emma Degen<br>
+        Arianna Del Bianco<br>
+        Celeste Farley<br>
+        Jack Fesen<br>
+        Elin Hauri<br>
+        Katherina Hürlimann<br>
+        Naomi Kastelic<br>
+        Joséphine Lepori<br>
+        Liah Preisig<br>
+        Jasmin Ramel<br>
+        Johannes Reiner<br>
+        Lilli Snijders<br>
+        Ella Studer<br>
+        Sofie Tichelaar<br>
+        Carlo Tretter<br>
+        Esther Vettor</h1><br>
+      <h6 class="section-title-small">fotos</h6>
+      <h1 class="section-title-big">Hubert Maissen</h1>
+    </section>
+      
+      <div class="full-black-section">
+        <div class="black-inner">
+          <div class="image-grid">
+            <img src="images/img1.jpg" alt="Image 1">
+            <img src="images/img2.jpg" alt="Image 2">
+            <img src="images/img3.jpg" alt="Image 3">
+            <img src="images/img4.jpg" alt="Image 4">
+            <img src="images/img5.jpg" alt="Image 5">
+            <img src="images/img6.jpg" alt="Image 6">
+            <img src="images/img7.jpg" alt="Image 7">
+            <img src="images/img8.jpg" alt="Image 8">
+            <img src="images/img9.jpg" alt="Image 9">
+          </div>
+          <br><br><br><br><br>
+
+        <h1 class="section-title-white">Promenadengasse 11<br>
+          8001 Zürich<br>
+          044 444 44 44<br>
+          079 696 96 96<br>
+          <a href="mailto:theater@kshp.ch">theater@kshp.ch</a>
+<br>
+          www.theater-hopro.ch</h1><br><br><br><br>
+
+          <div class="instagram-button-wrapper">
+            <a href="https://www.instagram.com/theaterhopro" target="_blank" class="instagram-button">
+              <img src="images/instagram-icon.jpg" alt="Instagram" />
+              <span>@theaterhopro</span>
+            </a>
+          </div>
+          <!-- You can add more content here -->
+        </div>
+      </div>
+    
+  </main>
+
+  <a href="#" class="back-to-top" title="Zurück nach oben">↑</a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

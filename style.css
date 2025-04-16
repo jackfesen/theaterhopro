@@ -1,0 +1,525 @@
+/* Reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.inter-400 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.montserrat-300 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Make sure body is scrollable */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.p-black {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 16px padding: 2 0rem padding-top: 10px
+  color: black
+}
+
+.p-grey {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 16px padding: 2 0rem padding-top: 10px
+  color: grey
+}
+
+.p-grey-center {
+  text-align: center;
+  color: grey;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 16px padding: 2 0rem padding-top: 10px
+}
+
+
+/* Hero section: fullscreen */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* More content scrolls below */
+.more-info {
+  padding: 16rem 8rem;
+  background: white;
+  color: black;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+#ticket-link {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+html.kontakt-page, body.kontakt-page {
+  height: 100%;  /* Ensures the page fills the screen vertically */
+  background-color: #000;  /* Black background */
+  color: white;  /* White text */
+  margin: 0;
+  padding: 0;
+}
+
+body.kontakt-page {
+  background-color: #000; /* Black background */
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main.kontakt-page {
+  flex: 1;
+}
+
+
+.black-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.black-section a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: normal;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.black-section a {
+  font-size: 60px;
+  margin: 20px 0;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+  transform-origin: center;
+}
+
+.black-section a:hover {
+  opacity: 0.6;
+  transform: scaleX(1.6);
+}
+
+.full-black-section {
+  background-color: black;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 3rem 1rem;
+  color: white;
+}
+
+.black-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px; /* optional: makes corners slightly rounded */
+}
+
+/* Section title */
+.section-title-big {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 60px;
+  letter-spacing: 1px;
+  margin-bottom: 20px
+}
+
+.section-title-white {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 20px
+}
+
+
+.section-title-grey {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 60px;
+  color: grey;
+  letter-spacing: 1px;
+}
+
+.section-title-small {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px
+}
+
+.instagram-button-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.instagram-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  gap: 0.75rem;
+}
+
+.instagram-button img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* makes dark icons white */
+  transition: transform 0.3s ease;
+}
+
+.instagram-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.instagram-button:hover img {
+  transform: scale(1.1);
+  filter: none;
+}
+
+
+/* Background video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Topbar layout */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: black;
+  z-index: 10;
+}
+
+.topbar-left,
+.topbar-center,
+.topbar-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar-left {
+  justify-content: flex-start;
+}
+
+.topbar-right {
+  justify-content: flex-end;
+}
+
+/* Logo */
+.logo img {
+  max-height: 70px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Icons */
+.icon-btn {
+  font-size: 50px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.gallery-icon {
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Dropdown menu */
+#dropdown-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+/* Dropdown menu font */
+#dropdown-menu,
+#dropdown-menu a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  left: 23px;
+  font-size: 60px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-links a {
+  font-size: 60px;
+  margin: 20px 0;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+  transform-origin: center;
+}
+
+.menu-links a:hover {
+  opacity: 0.6;
+  transform: scaleX(1.9);
+}
+
+/* Flyer */
+.flyer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 90px);
+  padding-top: 90px;
+}
+
+.flyer-img {
+  width: 420px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Utilities */
+.hidden {
+  display: none !important;
+}
+
+/* Zeitstrahl General */
+#zeitstrahl {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #0000;
+}
+
+.zeitstrahl-content {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Timeline Entry */
+.timeline-entry {
+  position: relative;
+  text-align: center;
+}
+
+.timeline-year {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+/* Timeline Box */
+.timeline-box {
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  margin-top: 0.5rem;
+
+  /* These help it expand naturally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.timeline-flyer {
+  width: 100%;
+  height: auto; /* Make sure the height adjusts naturally */
+  max-height: 1000px; /* You can increase this if needed */
+  object-fit: contain; /* So the image isn't cropped */
+  border-radius: 8px;
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background-color: #444;
+}
+
+.kontakt-page {
+  margin-top: 80px; /* space below your topbar */
+}
+
+.map-section iframe {
+  display: block;
+  margin-top: 90px; /* topbar height */
+  width: 100%;
+  height: 500px;
+  max-height: 65vh;
+  border: none;
+}
+
+.kontakt-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.kontakt-page a:hover {
+  text-decoration: underline
+}
+
+.section-title-white a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title-white a:hover {
+  text-decoration: underline
+}
+
+.topbar-right a {
+  color: inherit;
+  text-decoration: none;
+}
